@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10-17-2021 04:09:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.entidad.Clinica" table="clinica" catalog="hibernate" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="doctores" type="string">
+            <column name="Doctores" length="500" not-null="true" />
+        </property>
+        <property name="pacientes" type="string">
+            <column name="Pacientes" length="500" not-null="true" />
+        </property>
+        <property name="medicamento" type="string">
+            <column name="Medicamento" length="500" not-null="true" />
+        </property>
+        <property name="sucursales" type="string">
+            <column name="Sucursales" length="500" not-null="true" />
+        </property>
+        <property name="proveedores" type="string">
+            <column name="proveedores" length="500" not-null="true" />
+        </property>
+        <property name="instrumentos" type="string">
+            <column name="instrumentos" length="500" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
